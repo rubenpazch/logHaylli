@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace AppLogger
 {
-    class Class2
+    public interface ILogFormatter
     {
+        string Format(LogEntry logEntry);
     }
 }
