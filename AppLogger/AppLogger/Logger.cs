@@ -44,7 +44,7 @@ namespace AppLogger
         {
             if (string.IsNullOrWhiteSpace(message))
             {
-                throw new ArgumentNullException("message");
+                throw new ArgumentNullException("Message is null");
             }
             var logEntry = new LogEntry
             {

@@ -21,7 +21,8 @@ namespace AppLogger
 
         public string ToString(ILogFormatter formatter)
         {
-            if (formatter == null) return ToString();
+            if (formatter == null)
+                return ToString();
             try
             {
                 return formatter.Format(this);
